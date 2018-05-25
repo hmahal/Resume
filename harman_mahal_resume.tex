@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Modified: Harman Mahal
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/hmahal}{\Large Harman Mahal}} & Email : \href{mailto:harmanmahal@gmail.com}{harmanmahal@gmail.com}\\
+  \href{https://github.com/hmahal}{https://github.com/hmahal} & Phone : +1-604-401-2161 \\
+\end{tabular*}
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C\#, Java, Javascript, TypeScript, C/C++, SQL}
+    }
+    \item{
+      \textbf{Technologies}{: Azure, MongoDB, React, Docker, Unix/Linux, Node.js}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Perked, Inc.}{Vancouver, BC}
+      {Software Engineer, Intern}{May 2017 - Aug 2017}
+      \resumeItemListStart
+        \resumeItem{User Action Flow Tracking}
+          {Designed and implemented end-to-end user tracking as a sole developer. Collected events from various event streams, cleaned and stored the raw data for analysis. Integrated the raw data with user data to identify and diagnose user errors.
+          \newline
+          \textbf{\textit{Technologies}}: TypeScript, Node.js, MongoDB, React}
+        \resumeItem{Admin Command Line Tools}
+          {Refactored existing Admin Command Line tools to move from JavaScript to TypeScript and make the codebase more functional. Added additional functionality to the tools to simplify and make the admin actions more efficient.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MDA Corp.}{Richmond, BC}
+      {Junior Software Developer, Co-op}{May 2016 - Dec 2016}
+      \resumeItemListStart
+        \resumeItem{Notifications}
+          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
+        \resumeItem{Nostos}
+          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
+        \resumeItem{Workflows}
+          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
+        \resumeItem{Data Collection}
+          {Designed the internal survey and crowd sourcing platfowm which allowed for creating various tasks for crowd sourding or embedding surveys across the Coursera platform.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Ellebox Co.}{Vancouver, BC}
+      {Web Developer}{May 2016 - Jan 2017}
+      \resumeItemListStart
+        \resumeItem{Portfolio Management}
+          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
+        \resumeItem{QuantDesk}
+          {Python backend for a web application used by hedge fund managers for portfolio management.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Nintendo Entertainment System (NES) Emulator}
+      {Implementation of the MOS 6502 CPU. Implemented an interpreter in C\# to read and execute software originally written for the NES.}
+    \resumeSubItem{DevDash}
+      {Application integrating Trello and Github to visualize and manage Github issues. Implemented using .NET Core with integrations for Trello and Github API. Hosted using Azure Web Apps and SQL Database.}
+    \resumeSubItem{City Simulator}
+      {Team leader for the Networking team. Implemented JSON-RPC and asynchronous networking for server and clients (Unity \& Hololens). Integrated server, database and networking team projects and deployed project to Azure.}
+    \resumeSubItem{Slack Chatbot}
+      {Created a slack chatbot for conducting surveys using TypeScript and Node.js. Surveys conducted using multiple option and text responses. Implemented response validation, summarizing and displaying survey results through slack.}
+    \resumeSubItem{DankTank}
+      {2D Android game created using a custom game engine written from scratch. Used OpenData provided by City of New Westminster to introduce public art locations to the players.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {British Columbia Institute of Technology}{Burnaby, BC}
+      {Computer Systems Technology, Technical Programming Option;  GPA: 91\%}{Sep. 2015 -- May. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
